@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     
   </head>
 
@@ -62,10 +62,37 @@
           <input type="text" id="zip_code" name="zip_code">
 
         </fieldset>
+
+        <fieldset id="newsletter">
+
+          <legend>Newsletter</legend>
+
+          <label>Select the newsletters you would like to receive:</label><br>
+
+          <input type="checkbox" id="ht_news" value="html_news" name="type_of_newsletter"><label for="ht_news">HTML News</label><br>
+
+          <input type="checkbox" id="cs_news" value="css_news" name="type_of_newsletter"><label for="cs_news">CSS News</label><br>
+
+          <input type="checkbox" id="js_news" value="js_news" name="type_of_newsletter"><label for="js_news">Javascript News</label><br>
+
+          <label id="news_format">Newsletter format</label>
+
+          <input type="radio" id="ht_format" value="html_format" name="newsletter_format"><label for="ht_format">HTML</label><br>
+
+          <input type="radio" id="text_format" value="text_format" name="newsletter_format"><label for="text_format">Plain text</label>
+
+          <label for="topics" id="ll_topics">Other topics you´d would like to hear about</label>
+          <textarea id="topics" name="other_topics"></textarea>
+        </fieldset>
       
+        <button type="submit" id="submit">Sign Up</button>
       </form>
 
     </main>
+
+    <footer>
+      <p>Copyright The Code Review</p>
+    </footer>
 
   </body>
 </html>
